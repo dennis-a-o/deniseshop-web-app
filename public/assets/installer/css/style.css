@@ -1,0 +1,185 @@
+:root{
+	--header-color: #344767;
+	--text-color: #67748e;
+	--link-color: #5e72e4;
+
+	--surface1: #6600cc;
+	--surface2: #e3e6e833;
+	--surface3: #5e72ea;
+
+	--bg-color-white: #ffffff;
+	--bg-color-primary:#f8f9fa;
+	--bg-color-light:#ebf0f4;
+
+	--box-shadow:  0px 10px 20px 0px rgba(221,221,221,0.6);
+
+	--font-family: "Open Sans", sans-serif;
+}
+
+@font-face{
+	font-family: var(--font-family);
+	src: url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&family=Open+Sans:300,400,500,700");
+}
+
+body{
+	font-family: var(--font-family);
+	font-size: 14px;
+	color: var(--text-color);
+	background-color: var(--bg-color-primary);
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: var(--font-family);
+	color:var(--header-color); 
+}
+
+li{
+	list-style: none;
+}
+
+p,span, a,i{
+	color: var(--text-color); 
+	line-height: 27px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover, a:focus{
+	text-decoration: none;
+	outline: none; 
+}
+
+button:focus{
+	outline: none; 
+	box-shadow: none;
+}
+
+input, textarea,select{
+	font-size: 14px;
+	color: var(--text-color);
+}
+
+.btn{
+	font-size: 14px;
+	border: none;
+}
+
+.btn:hover{
+	box-shadow: var(--box-shadow);
+}
+
+.btn-primary{
+	background-color: var(--surface3);
+}
+
+.form-control{
+	font-size: 14px;
+	color: var(--text-color);
+}
+
+.form-control:focus{
+	border: 1px solid var(--surface1);
+	box-shadow: none;
+	outline: none;
+}
+
+.form-check-label{
+	color: var(--text-color);
+}
+
+.form-check-input{
+	transform: scale(1.3);
+}
+
+.form-check-input:focus{
+	box-shadow: none;
+}
+
+.form-check-input:checked{
+	background-color: var(--surface3);
+	border: none;
+}
+
+.form-check .form-check-input:focus{
+	border: 1px solid #e6e6e6;
+}
+
+.form-switch .form-check-input:not(:checked){
+	background-color: #e2e6e9;
+	border-color: #e2e6e9;
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='rgba(255,255,255,1.0)'/></svg>");
+}
+
+.installer-container{
+	margin-top: 100px;
+}
+
+.installer-container .header{
+	background-color: #6600cc;
+	padding: 48px 24px;
+	text-align: center;
+	border-radius:8px 8px 0 0;
+}
+
+.installer-container .steps{
+	padding: 24px;
+	margin-top: -44px;
+	z-index: 1;
+}
+
+.installer-container .steps ul{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.installer-container .steps ul li{
+	display: inline-block;
+	
+}
+
+.installer-container .steps ul li.divider{
+	height: 1px;
+	width: 30px;
+	padding: 0;
+	border: 2px solid #e0e0e0;
+}
+
+.installer-container .steps ul li.divider.active{
+	border: 2px solid #5e72ea;
+}
+
+.installer-container .steps ul li a i{
+	background-color: var(--surface3);
+}
+
+.installer-container .steps ul li i{
+	display: flex;
+    width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	align-items: center;
+	justify-content: center;
+	background-color: #e0e0e0;
+	color: #ffffff;
+}
+
+.installer-container .content{
+	padding: 24px;
+}
+
+.installer-container .content pre{
+	background-color: black;
+	color: yellow;
+	padding: 12px;
+	max-height: 400px;
+}
+
+.installer-container .button{
+	padding: 24px;
+}
+

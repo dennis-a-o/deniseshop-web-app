@@ -1,0 +1,85 @@
+:root{
+	--text1: #344767;
+	--text2: #67748e;
+	--text3: #5e72e4;
+	--surface1: #6600cc;
+	--surface2: #e3e6e833;
+	--surface3: #5e72ea;
+	--shadow1:  0px 10px 20px 0px rgba(221,221,221,0.6);
+
+	--font-family: "Open Sans", sans-serif;
+
+	--blue :#11cdef;
+	--dark: #344767;
+	--green: #2dce89;
+	--indigo: #5e72e4;
+	--pink: #ff0080;
+	--purple: #cb0c9f;
+	--red: #ea0606;
+	--yellow: #fbcf33;
+    --green-light: #b0eed3;
+    --red-light:#ffe9e9;
+    --whitesmoke:#f9f9f9;
+}
+@font-face{
+	font-family: var(--font-family);
+	src: url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&family=Open+Sans:300,400,500,700");
+}
+
+body{
+	font-family: var(--font-family) !important;
+	font-weight: 300;
+	font-size: 14px !important;
+	line-height: 27px;
+	color: var(--text2);
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: var(--font-family);
+	font-weight:700;
+	color:var(--text1) !important; 
+}
+li{list-style: none;}
+i{font-size: 16px; color: var(--text2);}
+p,span, a,i{color: var(--text2); line-height: 27px;}
+a{text-decoration: none !important;}
+a:hover, a:focus{text-decoration: none; outline: none; color: var(--text3);}
+button:focus{outline: none; box-shadow: none;}
+input, textarea,select{font-size: 14px; color: var(--text2);}
+
+.py_150{padding: 150px 0;}
+
+.btn{
+	font-size: 14px !important;
+	font-weight: bold !important;
+	padding: 10px 20px !important;
+	border: none !important;
+}
+.btn:hover{
+	box-shadow: var(--shadow1) !important;
+}
+.btn-primary{
+	background-color: var(--surface3) !important;
+}
+.form-control{
+	font-size: 14px !important;
+	color: var(--text2) !important;
+	padding: 10px 20px !important;
+}
+.form-control:focus{
+	border: 1px solid var(--surface1) !important;
+	box-shadow: none !important;
+	outline: none !important;
+}
+.form-check-label{color: var(--text2);}
+.form-check-input{transform: scale(1.3) !important;}
+.form-check-input:focus{box-shadow: none !important;}
+.form-check-input:checked{
+	background-color: var(--surface3) !important;
+	border: none !important;
+}
+.form-check .form-check-input:focus{border: 1px solid #e6e6e6;}
+.form-switch .form-check-input:not(:checked){
+	background-color: #e2e6e9 !important;
+	border-color: #e2e6e9 !important;
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='rgba(255,255,255,1.0)'/></svg>")!important;
+}
