@@ -43,7 +43,7 @@ A modern e-commerce solution featuring an admin panel and RESTful API, built wit
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/dennis-o-a/deniseshop.git
+   git clone https://github.com/dennis-a-o/deniseshop-web-app.git
    cd deniseshop
    ```
 
@@ -214,7 +214,7 @@ curl -X GET http://localhost:8000/api/products \
 
 ## Client
 
-The Deniseshop web App serves the [Deniseshop Android App](https://github.com/doa/deniseshopecommerce.git) for RESTful api.</br>
+The Deniseshop web App serves the [Deniseshop Android App](https://github.com/doa/deniseshop.git) for RESTful api.</br>
 
 ## License
 
