@@ -214,7 +214,7 @@ curl -X GET http://localhost:8000/api/products \
 
 ## Client
 
-The Deniseshop web App serves the [Deniseshop Android App](https://github.com/doa/deniseshop.git) for RESTful api.</br>
+The Deniseshop web App serves the [Deniseshop Android App](https://github.com/dennis-a-o/deniseshop.git) for RESTful api.</br>
 
 ## License
 
